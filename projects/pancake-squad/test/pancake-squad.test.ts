@@ -79,7 +79,8 @@ contract("Pancake Squad", ([owner, operator, alice, bob, carol, david, erin]) =>
       i++;
     }
 
-    // Change sale contract from the VRF
+    // **TEST PURPOSES ONLY: 0xEF3bE3c0348D3F1BE45cb78F0287C57F5452D888
+
     await mockVRF.changeNFTSaleContract(nftSale.address, { from: owner });
 
     // Transfer owner of the PancakeSquad
